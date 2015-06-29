@@ -1,0 +1,14 @@
+/* line 2, ../../../layout_scss/layout.scss */
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+/* line 6, ../../../layout_scss/layout.scss */
+.hc_blog_section {
+  background: none;
+  float: left;
+  margin-right: 30px;
+  margin-top: 30px;
+  width: 500px;
+}

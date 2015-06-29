@@ -1,0 +1,20 @@
+<form id="LoginForm" method="post" action="">
+        <fieldset>
+            <legend>Login form</legend>
+            <p>
+                <label for="username">UserName</label>
+                <input id="username" name="username" type="text">
+            </p>
+            
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </p>
+            <img src='<?php echo $this->basePath('img/captcha') ?>/<?php echo $this->captcha?>.png' alt="captcha"> 
+            <input type="text" class="captcha" name="captcha[input]"/>
+            <input type="hidden" name="captcha[id]" value="<?php echo $this->captcha ?>"/>
+            <p>
+                <input class="submit" type="submit" value="Submit">
+            </p>
+        </fieldset>
+    </form>

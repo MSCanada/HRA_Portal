@@ -1,0 +1,61 @@
+<?php
+
+namespace HRA\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Registeredusers
+ *
+ * @ORM\Table(name="registeredusers")
+ * @ORM\Entity
+ */
+class Registeredusers
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="LastName", type="string", length=255, nullable=true)
+     */
+    private $lastname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="FirstName", type="string", length=255, nullable=true)
+     */
+    private $firstname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Email", type="string", length=255, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Password", type="string", length=255, nullable=true)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Username", type="string", length=255, nullable=true)
+     */
+    private $username;
+
+
+}
+
